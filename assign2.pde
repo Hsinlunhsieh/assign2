@@ -69,7 +69,7 @@ void draw(){
         text("Press Enter", width/3, height/2);    
         break;
     case FROG_DIE:
-        //delay(1000);
+        delay(1000);
         frogX=frogInitX;
         frogY=frogInitY;
         gameState = GAME_RUN;
@@ -211,7 +211,7 @@ void keyPressed() {
         
       }
     }
-    if(key==ENTER /*still needs something*/){
+    if((key==ENTER /*still needs something*/) && (gameState != GAME_RUN)){
       gameState = GAME_RUN;
       life=3;
       frogX = frogInitX;
