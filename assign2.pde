@@ -69,7 +69,7 @@ void draw(){
         text("Press Enter", width/3, height/2);    
         break;
     case FROG_DIE:
-        delay(1000);
+        delay(1);
         frogX=frogInitX;
         frogY=frogInitY;
         gameState = GAME_RUN;
