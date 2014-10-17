@@ -141,7 +141,7 @@ void draw(){
             gameState = GAME_LOSE;
          }
          // car1 hitTest
-         if ((frogCX-leftCar1CX < 32)&&(frogCX-leftCar1CX > -32) 
+         if ((frogCX-leftCar1CX<32)&&(frogCX-leftCar1CX>-32) 
          && (frogCY == 144)){ 
              currentTime = millis();
              image(imgDeadFrog, frogX, frogY);
@@ -149,7 +149,7 @@ void draw(){
              gameState = FROG_DIE;
          }
          // car2 hitTest
-         if ((frogCX-rightCar1CX >-32)&&(frogCX-rightCar1CX <32)
+         if ((frogCX-rightCar1CX>-32)&&(frogCX-rightCar1CX<32)
          && (frogCY == 208)){
              currentTime = millis();
              image(imgDeadFrog, frogX, frogY);
@@ -157,7 +157,7 @@ void draw(){
              gameState = FROG_DIE;
          }
          // car3 hitTest
-         if ((frogCX-leftCar2CX < 32)&&(frogCX-leftCar2CX > -32)
+         if ((frogCX-leftCar2CX<32)&&(frogCX-leftCar2CX>-32)
          && (frogCY == 272)){ 
              currentTime = millis();
              image(imgDeadFrog, frogX, frogY);
@@ -166,7 +166,7 @@ void draw(){
          }
 
          // car4 hitTest
-         if ((frogCX-rightCar2CX >-32)&&(frogCX-rightCar2CX <32)
+         if ((frogCX-rightCar2CX>-32)&&(frogCX-rightCar2CX<32)
          && (frogCY == 336)){
              currentTime = millis();
              image(imgDeadFrog, frogX, frogY);
