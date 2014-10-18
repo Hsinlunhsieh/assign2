@@ -105,18 +105,18 @@ void draw(){
          image(imgLeftCar1, leftCar1X, leftCar1Y);
   
          //car2 move
-         leftCar2X += speed*1.5;
-         if (leftCar2X > width){
-             leftCar2X = 0;
-         }
-         image(imgLeftCar2, leftCar2X, leftCar2Y);
-  
-         //car3 move
-         rightCar1X -= speed*2;
+         rightCar1X -= speed*1.5;
          if (rightCar1X < 0){
              rightCar1X = width;
          }
          image(imgRightCar1, rightCar1X, rightCar1Y);
+  
+         //car3 move
+         leftCar2X += speed*2;
+         if (leftCar2X > width){
+             leftCar2X = 0;
+         }
+         image(imgLeftCar2, leftCar2X, leftCar2Y);
 
          //car4 move
          rightCar2X -= speed*1;
