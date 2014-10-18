@@ -224,7 +224,7 @@ void keyPressed() {
     
      }
     }
-    if((key==ENTER) && 
+    if((key == ENTER) && 
       (gameState == GAME_START) || 
       (gameState == GAME_WIN) || 
       (gameState == GAME_LOSE)){
